@@ -1,1 +1,48 @@
-{"version":"0.2.0","ready":false,"tag":"v0.2.0-tide-preview","repository":"helldragonpz/TanadosLinux-Downloads"}
+{
+  "version": "0.2.0",
+  "ready": true,
+  "tag": "v0.2.0-tide-preview",
+  "repository": "helldragonpz/TanadosLinux-Downloads",
+  "iso": {
+    "size": 6446008320,
+    "sha256": "3602f03448608cad93cbcbde550769b542aa751ab6c78a8ec8b704ea980777eb",
+    "parts": [
+      {
+        "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso.part01",
+        "size": 1900000000
+      },
+      {
+        "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso.part02",
+        "size": 1900000000
+      },
+      {
+        "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso.part03",
+        "size": 1900000000
+      },
+      {
+        "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso.part04",
+        "size": 746008320
+      }
+    ]
+  },
+  "mediaCreator": {
+    "windows": {
+      "name": "Tanados-Media-Creator-0.2.0-Windows-x64.zip",
+      "size": 158882030
+    },
+    "linux": {
+      "name": "Tanados-Media-Creator-0.2.0-Linux-amd64.deb",
+      "size": 96083068
+    },
+    "portable": {
+      "name": "Tanados-Media-Creator-0.2.0-Linux-x64.tar.gz",
+      "size": 123545220
+    }
+  },
+  "validation": {
+    "nativeTests": 109,
+    "squashfsAudit": true,
+    "uefiBoot": true,
+    "installedBoot": true
+  }
+}

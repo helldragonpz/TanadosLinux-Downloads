@@ -59,7 +59,7 @@ function renderRelease(){
   const portable=document.getElementById('portable-download');portable.hidden=platform!=='linux';if(platform==='linux')portable.href=assetUrl(release.mediaCreator.portable.name);
   document.getElementById('iso-hash').textContent=release.iso.sha256;
   document.getElementById('checksum-download').href=assetUrl('SHA256SUMS');
-  const guide=document.getElementById('install-guide');guide.href=assetUrl('INSTALL.md');guide.hidden=false;
+  const guide=document.getElementById('install-guide');guide.href=`https://github.com/${repository}/blob/main/${language==='bg'?'INSTALL.bg.md':'INSTALL.md'}`;guide.hidden=false;
   const validation=document.getElementById('validation-text');
   const gates=[];if(release.validation.nativeTests)gates.push(language==='bg'?`${release.validation.nativeTests} native теста`:`${release.validation.nativeTests} native tests`);if(release.validation.squashfsAudit)gates.push('SquashFS audit');if(release.validation.uefiBoot)gates.push(language==='bg'?'UEFI стартиране в VM':'UEFI boot in VM');if(release.validation.installedBoot)gates.push(language==='bg'?'инсталация и първо стартиране в VM':'installation and first boot in VM');
   validation.textContent=(language==='bg'?'Проверено: ':'Checked: ')+gates.join(', ')+(language==='bg'?'. Физически PC/лаптоп, Windows USB запис и Secure Boot още не са валидирани за този образ.':'. Physical PC/laptop installation, Windows USB writing and Secure Boot remain unvalidated for this image.');
