@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tanados Linux Obsidian Tide. Download the preview, create a verified USB installer, and make your next desktop your own.">
+  <meta name="theme-color" content="#0c1619">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>Tanados Linux — Obsidian Tide</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Към съдържанието</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Tanados Linux"><img src="assets/mark.svg" alt="" width="34" height="34"><span>TANADOS<small>LINUX / OBSIDIAN</small></span></a>
+    <nav aria-label="Main navigation"><a href="#desktop" data-i18n="navDesktop">Десктоп</a><a href="#install" data-i18n="navInstall">Инсталация</a><a class="nav-download" href="#download" data-i18n="navDownload">Свали <span aria-hidden="true">↗</span></a></nav>
+    <button class="language" id="language" type="button" aria-label="Switch to English">EN</button>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> OBSIDIAN TIDE <span class="edition">0.2.0 PREVIEW</span></p>
+        <h1 id="hero-title" data-i18n="heroTitle">Твоят десктоп.<br><em>В нова посока.</em></h1>
+        <p class="hero-description" data-i18n="heroDescription">Пространство за игрите, идеите и ежедневието ти. Tanados събира KDE Plasma, собствени приложения и новата тема Obsidian Tide в един Linux десктоп.</p>
+        <div class="hero-actions"><a class="button primary" href="#download" data-i18n="heroDownload">Свали Tanados <span aria-hidden="true">↓</span></a><a class="text-link" href="#desktop" data-i18n="heroExplore">Разгледай десктопа <span aria-hidden="true">→</span></a></div>
+        <p class="hero-note" data-i18n="heroNote">За x86-64 компютри и лаптопи · Безплатен preview</p>
+      </div>
+      <figure class="hero-art"><img src="assets/tide.webp" alt="Obsidian Tide: dark coastal rock, copper light and a teal sea" width="1672" height="941" fetchpriority="high"><figcaption><span>01 / OBSIDIAN TIDE</span><span data-i18n="artCaption">Нова палитра. Нов поглед.</span></figcaption><span class="art-word" aria-hidden="true">TIDE</span></figure>
+    </section>
+    <div class="foundation wrap"><span data-i18n="foundation">Основа, която познаваш.</span><p>Ubuntu 26.04 LTS <i>/</i> KDE Plasma 6 <i>/</i> Wayland <i>/</i> Btrfs</p></div>
+    <section class="desktop-section wrap" id="desktop" aria-labelledby="desktop-title">
+      <div class="section-heading"><p class="eyebrow" data-i18n="desktopEyebrow">ТВОЕТО ПРОСТРАНСТВО</p><h2 id="desktop-title" data-i18n="desktopTitle">Красив. Подреден.<br>Под твой контрол.</h2><p data-i18n="desktopDescription">Морско зелено, топла мед и тъмен графит. Inter за приложенията, JetBrains Mono за терминала. Един стил, от първото стартиране до последния отворен прозорец.</p></div>
+      <div class="showcase"><div class="showcase-tabs" role="tablist" aria-label="Tanados applications"><button id="tab-appearance" role="tab" aria-selected="true" aria-controls="app-preview" data-preview="appearance" data-i18n="appearanceTab">Тема и шрифтове</button><button id="tab-health" role="tab" aria-selected="false" aria-controls="app-preview" tabindex="-1" data-preview="health" data-i18n="healthTab">Control Center</button><button id="tab-media" role="tab" aria-selected="false" aria-controls="app-preview" tabindex="-1" data-preview="media" data-i18n="mediaTab">Media Creator</button></div>
+        <div class="app-preview" id="app-preview" role="tabpanel" aria-labelledby="tab-appearance" tabindex="0"><img id="preview-image" src="assets/appearance.webp" alt="Tanados Appearance application with Tide, Copper and Glacier themes" width="1180" height="760" loading="lazy"></div>
+        <div class="showcase-caption"><span class="tiny-label" data-i18n="realCapture">РЕАЛЕН ИНТЕРФЕЙС</span><p id="preview-caption" data-i18n="appearanceCaption">Смени палитрата, шрифтовете и терминала. Съчетай различни тапети за хоризонтални и вертикални монитори.</p></div>
+      </div>
+      <div class="feature-lines"><article><span class="feature-number">01</span><div><h3 data-i18n="featureHealthTitle">Системата, на едно място.</h3><p data-i18n="featureHealthText">Следи диска, паметта и системните грешки. Управлявай обновленията, точките за възстановяване и режимите на захранване от Control Center.</p></div></article><article><span class="feature-number">02</span><div><h3 data-i18n="featureCreateTitle">Работа, игра и малко Lumi.</h3><p data-i18n="featureCreateText">Tanados Store, Game Library, периферни устройства и Lumi. GPU визуализаторът Resonance добавя движение към музиката ти.</p></div></article></div>
+    </section>
+    <section class="download-section" id="download" aria-labelledby="download-title"><div class="wrap download-layout"><div><p class="eyebrow" data-i18n="downloadEyebrow">СЛЕДВАЩАТА СТЪПКА</p><h2 id="download-title" data-i18n="downloadTitle">Добре дошъл<br>в Tanados.</h2><p data-i18n="downloadDescription">Започни с живия десктоп от USB. Разгледай го, преди да решиш дали да го инсталираш.</p><div class="release-stamp"><span class="status-dot"></span><strong>Obsidian Tide 0.2.0</strong><span>PREVIEW / AMD64</span></div><p class="preview-note" data-i18n="previewNote">Това е тестово издание. Изключи Secure Boot за този preview. Преди инсталация запази важните си файлове.</p><a class="text-link release-link" id="release-link" hidden data-i18n="releaseNotes">Всички файлове и бележки към версията ↗</a></div>
+      <div class="download-panel"><div class="platform-picker" role="group" aria-label="Current operating system"><button class="selected" type="button" data-platform="windows" aria-pressed="true">Windows</button><button type="button" data-platform="linux" aria-pressed="false">Linux</button></div><p class="platform-hint" data-i18n="platformHint">Избери системата, от която ще създадеш USB флашката.</p><div id="release-status" class="release-status" role="status" data-i18n="releasePreparing">Подготвяме новото ISO. Файловете ще се появят след проверките.</div>
+        <div id="release-downloads" hidden><div class="download-step"><span class="step-badge">1</span><div><h3 data-i18n="isoDownloadTitle">Свали четирите части на ISO-то</h3><p data-i18n="isoDownloadText">Сложи ги в една папка. GitHub има ограничение за размера на отделен файл.</p><div id="iso-parts" class="parts"></div><p class="download-meta" id="iso-size"></p></div></div>
+          <div class="download-step"><span class="step-badge">2</span><div><h3 data-i18n="joinTitle">Съедини и провери</h3><p data-i18n="joinText">Помощникът събира частите и проверява пълния SHA-256. Не записва върху USB.</p><a class="button secondary" id="join-download"></a><details><summary data-i18n="joinCommand">Команда за стартиране</summary><code id="join-command"></code></details></div></div>
+          <div class="download-step"><span class="step-badge">3</span><div><h3 data-i18n="creatorTitle">Свали Media Creator</h3><p data-i18n="creatorText">Отвори готовото ISO, избери USB флашката и създай проверено инсталационно устройство.</p><a class="button primary" id="creator-download"></a><p class="download-meta" id="creator-size"></p><a id="portable-download" class="text-link" hidden data-i18n="portable">Linux portable архив ↗</a></div></div>
+          <details class="checksum"><summary data-i18n="checksum">Проверка на ISO / SHA-256</summary><code id="iso-hash"></code><a id="checksum-download" data-i18n="checksumsFile">Свали всички контролни суми</a></details>
+        </div><noscript><p>Downloads: <a href="https://github.com/helldragonpz/TanadosLinux-Downloads/releases">GitHub releases</a>. JavaScript enables the Windows/Linux selector.</p></noscript>
+      </div></div></section>
+    <section class="install-section wrap" id="install" aria-labelledby="install-title"><div class="section-heading"><p class="eyebrow" data-i18n="installEyebrow">ОТ USB ДО ДЕСКТОП</p><h2 id="install-title" data-i18n="installTitle">Първото стартиране,<br>стъпка по стъпка.</h2></div><ol class="install-steps"><li><span>01</span><h3 data-i18n="installOneTitle">Подготви флашката</h3><p data-i18n="installOneText">Използвай USB с поне 16 GB. Media Creator изтрива всички файлове на избраната флашка и проверява записа.</p></li><li><span>02</span><h3 data-i18n="installTwoTitle">Стартирай от USB</h3><p data-i18n="installTwoText">Отвори boot менюто на компютъра и избери UEFI USB. Secure Boot трябва да е изключен. Разгледай живия десктоп.</p></li><li><span>03</span><h3 data-i18n="installThreeTitle">Инсталирай, когато си готов</h3><p data-i18n="installThreeText">Отвори Install Tanados и следвай Calamares. Провери внимателно диска и избрания режим на разделяне.</p></li></ol>
+      <div class="requirements"><div><h3 data-i18n="requirementsTitle">Преди да започнеш</h3><p data-i18n="requirementsText">x86-64 процесор · поне 4 GB RAM · поне 40 GB дисково пространство · 16 GB USB · поне 16 GB свободни за свалените части и ISO.</p></div><div><h3 data-i18n="testedTitle">Какво е проверено</h3><p id="validation-text" data-i18n="validationPending">Новият образ се проверява преди публикуване. Изданието остава preview; проверките в VM не заменят тестовете на физически компютър.</p><a class="text-link" id="install-guide" hidden data-i18n="fullGuide">Пълно ръководство за инсталация ↗</a></div></div>
+      <details class="faq"><summary data-i18n="faqTitle">Мога ли да запазя Windows?</summary><p data-i18n="faqText">Живият десктоп от USB позволява да разгледаш Tanados преди инсталация. Dual boot и криптираната инсталация още нямат приемни тестове за това издание. За първи тест използвай виртуална машина или отделен празен диск.</p></details>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#"><img src="assets/mark.svg" width="28" height="28" alt=""><span>TANADOS<small>OBSIDIAN TIDE</small></span></a><p data-i18n="footerText">Създаден за нашите компютри. Споделен с приятели.</p><a href="https://github.com/helldragonpz/TanadosLinux-Downloads/issues" data-i18n="feedback">Сподели проблем ↗</a></footer>
+</body>
+</html>
