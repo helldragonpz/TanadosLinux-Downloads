@@ -44,10 +44,11 @@ positions. Appearance can apply it to the leftmost or all connected monitors.
 - Hybrid image: BIOS/UEFI El Torito entries, primary ISO9660 GPT partition, dedicated EFI partition and pinned loader readback passed.
 - Final ISO UEFI live boot: passed in an isolated 2-CPU / 4 GiB RAM VM.
 - Linux joining helper: reconstructed all four final parts and matched the complete ISO SHA-256.
-- GitHub draft assets: all 15 uploaded sizes and API SHA-256 digests matched local files; authenticated INSTALL.bg.md download matched.
+- GitHub release: `draft=false`, prerelease, 16 uploaded assets. Every size and API SHA-256 digest matched local files; the authenticated installation-guide download matched.
 - Download UI: 1440 px and 390 px browser checks passed with four active part links, BG/EN switching, Windows/Linux packages and no horizontal overflow or JavaScript errors.
-- Clean install and first disk-only UEFI boot: passed with a fresh user, Btrfs root/home, swap, no live account/autologin, correct sandbox permissions and a working Appearance window/catalog.
-- Public release publication and unauthenticated downloads are checked after activation.
+- Clean install and first disk-only UEFI boot: passed with a fresh user, Btrfs root/home, swap, no live account/autologin, correct sandbox permissions, a working Appearance window/catalog and a visible Brave browser.
+- Public downloads: all four ISO parts were downloaded in full without authentication; individual hashes, total size and complete ISO SHA-256 matched. Windows/Linux Media Creator links returned matching package prefixes; the Bulgarian guide matched in full.
+- Public GitHub Pages: exact deployed artwork, metadata, fonts license and installation guides matched. Desktop/mobile browser checks passed with active downloads, BG/EN and Windows/Linux selection, no horizontal overflow and no JavaScript errors.
 
 Preview limits: physical PC/laptop installation, native Windows USB writing and
 Windows ISO joining remain unvalidated. Secure Boot must be off. Dual boot,
