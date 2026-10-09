@@ -7,20 +7,28 @@ visualizer. Aperture adds new portrait/landscape artwork with a transparent
 audio-reactive halo. Physical PC/laptop installation, Secure Boot and native
 Windows USB writing still need hardware testing.
 
-## Download from GitHub
+## Download one complete ISO
 
 Open **[the download page](https://helldragonpz.github.io/TanadosLinux-Downloads/)**
-and choose Windows or Linux. Downloads are public and require no GitHub account.
-The source repository remains private. You can also open **[the 0.2.0 release](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)**
-and expand **Assets**.
-The GitHub **Source code** ZIP/tarball contains source, not a bootable OS.
+or the **[illustrated installation guide](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=en)**.
 
-Download your Media Creator package and all four files ending in
-`.iso.part01`, `.iso.part02`, `.iso.part03` and `.iso.part04`. Put the four parts
-and the joining helper below in one folder on NTFS, exFAT or a normal Linux
-filesystem; FAT32 cannot hold the finished ISO. Allow at least 16 GB free for
-the parts and reconstructed ISO. GitHub limits each release asset to 2 GiB,
-so the ISO is split only for downloading.
+Download **[the complete ISO](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso)** and **[its SHA-256 file](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256)** into one folder.
+There is one operating-system image, not four editions. The primary download is
+a single 6.45 GB file and needs no joining helper. Allow 10 GB free for the ISO
+and Media Creator. Use NTFS, exFAT or a normal Linux filesystem; FAT32 cannot
+hold this ISO. Choose Windows or Linux only to select the Media Creator package
+for the system creating the USB. Downloads are public; no GitHub account is needed.
+
+The source repository remains private. The GitHub Source code ZIP is not a
+bootable operating system.
+
+## Optional fallback: split GitHub download
+
+If the primary download is unavailable, open **[the public GitHub release](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)**
+and download all four .iso.part01–04 files and the joining helper. These are
+parts of the same single ISO. GitHub requires each release asset to be under
+2 GiB, so this backup copy is split. Keep every part in one folder and allow
+16 GB free for the parts and joined ISO.
 
 On **Windows**, also download `Join-Tanados-ISO.ps1`. Open PowerShell in that
 folder and run:

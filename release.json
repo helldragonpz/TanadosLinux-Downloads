@@ -23,7 +23,10 @@
         "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso.part04",
         "size": 746008320
       }
-    ]
+    ],
+    "name": "Tanados-Obsidian-Tide-0.2.0-amd64.iso",
+    "url": "https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso",
+    "checksumUrl": "https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256"
   },
   "mediaCreator": {
     "windows": {
@@ -43,6 +46,7 @@
     "nativeTests": 109,
     "squashfsAudit": true,
     "uefiBoot": true,
-    "installedBoot": true
+    "installedBoot": true,
+    "singleIsoDownload": true
   }
 }

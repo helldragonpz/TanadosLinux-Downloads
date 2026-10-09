@@ -58,3 +58,23 @@ access; public installation downloads and APT system updates do not.
 
 The source revision identifies the payload. Later documentation/website commits
 record release hashes and download links without changing that image.
+
+## Public download website revision
+
+The main download is now a single complete ISO, served from the Tanados mirror.
+The four GitHub parts are an optional fallback copy of the same image, not
+separate OS editions. The mirror file has the identical ISO size and SHA-256
+listed above. A complete unauthenticated HTTP download and resumed ranges at
+the beginning, middle and end passed. No ISO payload bytes were changed.
+
+The public website includes original/upstream attribution, detailed 0.2.0
+changes, thirteen app profiles, 24 real captures, theme previews, coordinated
+monitor artwork, Lumi setup limits, BG/EN FAQ and an illustrated installation
+page. Screenshot display does not certify support for every hardware model.
+
+Website validation: both pages passed browser checks at 320, 390, 768, 1440 and
+1920 pixels, with no horizontal overflow or JavaScript errors. BG/EN switching,
+Windows/Linux package selection, app filters, gallery keyboard navigation and
+focus restoration passed. Browser downloads started with the exact complete
+ISO and checksum filenames. Clipboard copying, unavailable metadata fallbacks
+and useful page content/image links with JavaScript disabled also passed.

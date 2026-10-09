@@ -2,11 +2,24 @@
 
 Отвори **[страницата за сваляне](https://helldragonpz.github.io/TanadosLinux-Downloads/)** и избери Windows или Linux — системата, от която ще създадеш флашката. Файловете са публични и не изискват GitHub акаунт. Кодът на проекта остава в частното repo.
 
-Това е preview за x86-64 компютри и лаптопи. Използвай флашка с поне **16 GB**, поне **4 GB RAM**, **40 GB** място за инсталираната система и **16 GB** свободно място за свалените части и готовото ISO. Изключи Secure Boot. Запази важните файлове на компютъра преди инсталация.
+Това е preview за x86-64 компютри и лаптопи. Използвай флашка с поне **16 GB**, поне **4 GB RAM**, **40 GB** място за инсталираната система и **10 GB** свободно място за директния ISO download (16 GB за резервното съединяване на части). Изключи Secure Boot. Запази важните файлове на компютъра преди инсталация.
 
-## Свали и съедини ISO
+## Свали едно готово ISO
 
-Свали **всичките четири части** `.iso.part01`–`.iso.part04` и помощника `Join-Tanados-ISO.ps1` за Windows или `Join-Tanados-ISO.sh` за Linux. Сложи ги в една папка върху NTFS, exFAT или нормална Linux файлова система. FAT32 не може да съхранява готовото ISO. ZIP архивът „Source code“ не съдържа операционната система.
+Отвори **[пълното ръководство със снимки](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=bg)**.
+
+Свали **[готовия ISO файл](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso)** и **[неговия SHA-256 файл](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256)** в една папка.
+Имаме **една операционна система и едно ISO** — основното сваляне не изисква части или съединяване.
+Изборът Windows/Linux определя Media Creator пакета, а не друга версия на Tanados.
+Използвай NTFS, exFAT или Linux файлова система; FAT32 не побира готовото ISO.
+ZIP архивът Source code в GitHub не е инсталационният образ.
+
+## Само ако директното сваляне не работи: GitHub резервно копие
+
+Четирите .iso.part01–04 файла в **[публичния release](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)**
+са части на същото едно ISO. GitHub изисква отделен release файл да е под 2 GiB,
+затова резервното копие е разделено. Свали всички части и помощника за Windows
+или Linux в една папка, с поне 16 GB свободни за съединяването.
 
 Отвори PowerShell в папката с файловете на Windows:
 
