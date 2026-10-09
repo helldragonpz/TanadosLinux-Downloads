@@ -1,99 +1,60 @@
 # Install Tanados Obsidian Tide 0.2.0
 
-This is the **0.2.0 preview for x86-64 PCs and laptops**. It includes Health,
-Recovery, signed Updates, Laptop & Firmware, the shared Tanados app interface,
-Lumi components, Tide/Copper/Glacier terminal themes and the GPU Resonance
-visualizer. Aperture adds new portrait/landscape artwork with a transparent
-audio-reactive halo. Physical PC/laptop installation, Secure Boot and native
-Windows USB writing still need hardware testing.
+Download **[Tanados Media Creator 0.2.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** for the Windows or Linux computer creating the USB.
+**You do not need to download Linux first.** Media Creator downloads the official image, checks it, writes your USB and verifies the complete copy automatically.
+Downloads are public and require no GitHub account. The OS image remains 0.2.0; Media Creator is 0.2.1.
 
-## Download one complete ISO
+See the **[illustrated installation guide](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=en)**.
+Use an x86-64 PC/laptop, a **16 GB+ USB**, an internet connection and **10 GB free** on the computer preparing it. Use NTFS/exFAT or a Linux filesystem for the cached 6.45 GB image; FAT32 cannot hold it.
+Physical PC/laptop installation, Secure Boot and native Windows USB writing still need hardware testing.
 
-Open **[the download page](https://helldragonpz.github.io/TanadosLinux-Downloads/)**
-or the **[illustrated installation guide](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=en)**.
+## Open Media Creator
 
-Download **[the complete ISO](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso)** and **[its SHA-256 file](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256)** into one folder.
-There is one operating-system image, not four editions. The primary download is
-a single 6.45 GB file and needs no joining helper. Allow 10 GB free for the ISO
-and Media Creator. Use NTFS, exFAT or a normal Linux filesystem; FAT32 cannot
-hold this ISO. Choose Windows or Linux only to select the Media Creator package
-for the system creating the USB. Downloads are public; no GitHub account is needed.
+On **Windows 10/11**, extract the whole `Tanados-Media-Creator-0.2.1-Windows-x64.zip` and open `TanadosMediaCreator.exe`. Keep the other files beside the EXE.
 
-The source repository remains private. The GitHub Source code ZIP is not a
-bootable operating system.
-
-## Optional fallback: split GitHub download
-
-If the primary download is unavailable, open **[the public GitHub release](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)**
-and download all four .iso.part01–04 files and the joining helper. These are
-parts of the same single ISO. GitHub requires each release asset to be under
-2 GiB, so this backup copy is split. Keep every part in one folder and allow
-16 GB free for the parts and joined ISO.
-
-On **Windows**, also download `Join-Tanados-ISO.ps1`. Open PowerShell in that
-folder and run:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\Join-Tanados-ISO.ps1
-```
-
-On **Linux**, also download `Join-Tanados-ISO.sh`. Open a terminal in that
-folder and run:
+On **Ubuntu/Debian**, install the DEB and open **Tanados Media Creator** from the application menu:
 
 ```bash
-bash ./Join-Tanados-ISO.sh
+sudo apt install ./Tanados-Media-Creator-0.2.1-Linux-amd64.deb
 ```
 
-The helper joins and verifies the full published SHA-256 before saving
-`Tanados-Obsidian-Tide-0.2.0-amd64.iso` and its `.sha256` sidecar. It never
-writes to a USB or target disk. Choose the resulting **ISO**, not a part file,
-in Media Creator. After successful verification you can delete the four parts. The checksum sidecar must stay beside the ISO.
+A Linux portable archive is also available for systems with working Chromium sandbox support.
 
-## Files to send directly
+## Create the USB automatically
 
-Send these three files together:
+1. Plug in your USB and open Media Creator.
+2. Select the flash drive by model, serial number and capacity.
+3. Choose **Create USB** and confirm the displayed device. **All files on this USB will be erased.**
+4. The app downloads Tanados and verifies its published SHA-256 automatically. **Pause download** preserves progress and leaves the USB unchanged. If interrupted, choose **Create USB** again to resume.
+5. Approve the operating system's administrator prompt. On Linux the selected USB volumes are unmounted automatically, without force. Wait for writing and full read-back verification to finish.
+6. When the app says **Your installation USB is ready**, safely eject it and continue below.
 
-- `Tanados-Obsidian-Tide-0.2.0-amd64.iso`
-- `Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256`
-- The Media Creator package for your friend's existing operating system:
-  `Tanados-Media-Creator-0.2.0-Windows-x64.zip` or
-  `Tanados-Media-Creator-0.2.0-Linux-amd64.deb`.
+Internal/system disks, unidentified devices, undersized USBs and devices replaced during the operation are refused. Downloaded images are cached and checked again before reuse, so another USB does not need another download. Administrator approval is requested only for the USB writer.
 
-Send this guide too. The ISO is 6,446,008,320 bytes; use a
-**16 GB or larger USB**. Keep the ISO and its `.sha256` in the same folder.
-Media Creator currently opens a local ISO; it does not download one for you.
+## Optional: local ISO or offline preparation
 
-The expected ISO SHA-256 is:
+If you already have an image, open **Already have an ISO? Use a local file** in Media Creator. Keep its `.sha256` beside it. For a friend's offline installation, send the ISO, sidecar and the Media Creator package together.
+
+Manual download: **[complete ISO](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso)** · **[SHA-256](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256)**.
+The one image is 6,446,008,320 bytes, with SHA-256:
 
 ```text
 3602f03448608cad93cbcbde550769b542aa751ab6c78a8ec8b704ea980777eb
 ```
 
-## Create the USB
+The optional **[GitHub backup](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)** contains four parts of this same ISO because each GitHub asset must be below 2 GiB. If needed, download all parts and the joining helper into one folder with 16 GB free, then run:
 
-On **Windows 10/11**, extract the whole ZIP, open its extracted folder and run
-`TanadosMediaCreator.exe`. Keep all files beside the EXE. On **Ubuntu/Debian
-Linux**, install the DEB through your package manager, then open **Tanados
-Media Creator** from the application menu. A Linux portable tar archive is
-also supplied for systems with working Chromium sandbox support.
-
-On Ubuntu/Debian, installing from the download folder can also be done with:
-
-```bash
-sudo apt install ./Tanados-Media-Creator-0.2.0-Linux-amd64.deb
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\Join-Tanados-ISO.ps1
 ```
 
-1. Plug in the USB and open Media Creator.
-2. Choose the Tanados ISO. Wait for **Checksum matched**.
-3. Select the USB. On Linux, unmount any mounted USB volumes first.
-4. Choose **Create USB**, check the displayed model, serial and capacity,
-   then confirm erasing that USB. **All files on that USB will be lost.**
-5. Approve the operating system's administrator prompt. Keep the USB connected
-   until the app finishes writing and verifying the full image.
+Or on Linux:
 
-The writer uses a raw image write and complete read-back verification.
-If using Rufus instead, select **DD Image mode** when prompted. See
-[the alternative writer instructions](INSTALLATION-MEDIA.md).
+```bash
+bash ./Join-Tanados-ISO.sh
+```
+
+The helper joins and verifies the ISO; it never writes a disk. Open the resulting complete ISO through Media Creator's local-file option. The source-code ZIP is not a bootable image. If using Rufus instead, select **DD Image mode** when prompted.
 
 ## Boot and install
 

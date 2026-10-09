@@ -30,17 +30,19 @@
   },
   "mediaCreator": {
     "windows": {
-      "name": "Tanados-Media-Creator-0.2.0-Windows-x64.zip",
-      "size": 158882030
+      "name": "Tanados-Media-Creator-0.2.1-Windows-x64.zip",
+      "size": 158887214
     },
     "linux": {
-      "name": "Tanados-Media-Creator-0.2.0-Linux-amd64.deb",
-      "size": 96083068
+      "name": "Tanados-Media-Creator-0.2.1-Linux-amd64.deb",
+      "size": 96087664
     },
     "portable": {
-      "name": "Tanados-Media-Creator-0.2.0-Linux-x64.tar.gz",
-      "size": 123545220
-    }
+      "name": "Tanados-Media-Creator-0.2.1-Linux-x64.tar.gz",
+      "size": 123550751
+    },
+    "version": "0.2.1",
+    "tag": "v0.2.1-media-creator"
   },
   "validation": {
     "nativeTests": 109,

@@ -34,12 +34,13 @@ $('#language').addEventListener('click',()=>{
 });
 function renderPlatform(){
  $$('[data-platform]').forEach(b=>{const s=b.dataset.platform===platform;b.classList.toggle('selected',s);b.setAttribute('aria-pressed',String(s));});
- const file=release?.mediaCreator?.[platform]?.name||(platform==='windows'?'Tanados-Media-Creator-0.2.0-Windows-x64.zip':'Tanados-Media-Creator-0.2.0-Linux-amd64.deb');
- if($('#creator-download')){$('#creator-download').href=assetBase+file;$('#creator-download').textContent='Media Creator · '+(platform==='windows'?'Windows ZIP':'Linux DEB')+' ↓';}
- if($('#creator-size'))$('#creator-size').textContent=platform==='windows'?'159 MB · Windows 10 / 11 · x64':'96 MB · Ubuntu / Debian · amd64';
+ const creatorBase='https://github.com/'+repo+'/releases/download/'+(release?.mediaCreator?.tag||'v0.2.1-media-creator')+'/';
+ const file=release?.mediaCreator?.[platform]?.name||(platform==='windows'?'Tanados-Media-Creator-0.2.1-Windows-x64.zip':'Tanados-Media-Creator-0.2.1-Linux-amd64.deb');
+ if($('#creator-download')){$('#creator-download').href=creatorBase+file;$('#creator-download').textContent='Media Creator · '+(platform==='windows'?'Windows ZIP':'Linux DEB')+' ↓';}
+ if($('#creator-size'))$('#creator-size').textContent=Math.round((release?.mediaCreator?.[platform]?.size||(platform==='windows'?159e6:96e6))/1e6)+' MB · Media Creator 0.2.1 · '+(platform==='windows'?'Windows 10 / 11 · x64':'Ubuntu / Debian · amd64');
  if($('#creator-instructions'))$('#creator-instructions').textContent=translate('download.'+platform);
  if($('#creator-command'))$('#creator-command').hidden=platform!=='linux';
- if($('#portable-download'))$('#portable-download').hidden=platform!=='linux';
+ if($('#portable-download')){$('#portable-download').hidden=platform!=='linux';$('#portable-download').href=creatorBase+(release?.mediaCreator?.portable?.name||'Tanados-Media-Creator-0.2.1-Linux-x64.tar.gz');}
  if($('#join-download')){$('#join-download').href=assetBase+'Join-Tanados-ISO.'+(platform==='windows'?'ps1':'sh');$('#join-download').textContent=translate('download.join')+' · '+(platform==='windows'?'Windows':'Linux')+' ↓';}
  if($('#join-command'))$('#join-command').textContent=platform==='windows'?'powershell -NoProfile -ExecutionPolicy Bypass -File .\\Join-Tanados-ISO.ps1':'bash ./Join-Tanados-ISO.sh';
 }
@@ -78,6 +79,7 @@ function validateRelease(d){
  if(d.iso.parts?.length!==4)throw Error('Missing fallback parts');let size=0;
  d.iso.parts.forEach((p,i)=>{if(p.name!=='Tanados-Obsidian-Tide-0.2.0-amd64.iso.part0'+(i+1)||!Number.isSafeInteger(p.size)||p.size<=0||p.size>=2147483648)throw Error('Invalid part');size+=p.size;});
  if(size!==d.iso.size)throw Error('Invalid image size');
+ if(d.mediaCreator?.tag!=='v0.2.1-media-creator'||d.mediaCreator?.version!=='0.2.1')throw Error('Unexpected Media Creator');
  for(const k of ['windows','linux','portable']){const a=d.mediaCreator?.[k];if(!a||!/^[A-Za-z0-9_.-]+$/.test(a.name)||!Number.isSafeInteger(a.size)||a.size<=0)throw Error('Invalid package');}return d;
 }
 fetch('content.json').then(r=>{if(!r.ok)throw Error('Translation file');return r.json();}).then(d=>{if(!d.bg||!d.en||Object.keys(d.bg).length!==Object.keys(d.en).length)throw Error('Incomplete translation');copy=d;applyLanguage();}).catch(()=>{language='bg';applyLanguage();$('#language').disabled=true;});

@@ -2,12 +2,15 @@
 
 **[Разгледай Tanados / Explore Tanados](https://helldragonpz.github.io/TanadosLinux-Downloads/)**
 
-**[Свали едно готово ISO / Download one complete ISO](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso)** · **[SHA-256](https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256)**
+**[Създай флашка с Media Creator 0.2.1 / Create a USB with Media Creator 0.2.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)**
 
-There is **one operating-system image**, 6,446,008,320 bytes (6.45 GB). The main
-download is a complete ISO; no joining helper is required. The four .part
-files on GitHub are an optional fallback copy of that same image because
-GitHub requires release assets to be under 2 GiB.
+Download the Windows or Linux app, select your USB and choose **Create USB**.
+Media Creator downloads the official ISO, verifies its checksum, writes the USB
+and checks the complete copy. **No separate Linux download is required.**
+Interrupted downloads can resume; cached images are checked before reuse.
+
+The OS remains Tanados Obsidian Tide 0.2.0. There is one image, 6.45 GB;
+manual ISO download and four GitHub fallback parts remain optional for offline use.
 
 ## Explore the distribution
 
@@ -21,7 +24,9 @@ system maintenance, a bilingual FAQ and illustrated installation instructions.
 - [Български offline guide](INSTALL.bg.md)
 - [English offline guide](INSTALL.md)
 - [Release evidence](RELEASE.md)
-- [Media Creator packages, fallback parts and checksums](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)
+- [Media Creator 0.2.1 packages and checksums](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.1-media-creator)
+- [Media Creator validation](MEDIA-CREATOR.md)
+- [Optional ISO fallback parts](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)
 - [Report a problem](https://github.com/helldragonpz/TanadosLinux-Downloads/issues)
 
 Public installation downloads need no GitHub account. Operating-system source
@@ -29,8 +34,9 @@ stays in the private TanadosLinux repository. The generated Source code ZIP
 contains this website, not the operating system.
 
 Choose Windows or Linux for Media Creator, according to the computer creating
-the USB. **The ISO is the same for both.** Keep the ISO and .sha256 together,
-then open the ISO in Media Creator. A 16 GB USB is required.
+the USB. **The ISO is the same for both.** Media Creator downloads it automatically.
+A 16 GB USB, internet and 10 GB free on the preparing computer are required.
+Linux USB volumes are unmounted automatically after image verification.
 
 This is a preview. Secure Boot must be off. Physical installation, native Windows
 USB writing/joining, dual boot, encryption and complete Recovery boot remain

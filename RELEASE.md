@@ -1,3 +1,5 @@
+> Media Creator **0.2.1** now downloads Tanados automatically and prepares a verified USB from one action. See [Media Creator changes and validation](MEDIA-CREATOR.md). The operating-system image and its 0.2.0 validation below are unchanged.
+
 # Obsidian Tide 0.2.0 preview evidence
 
 The [public download page](https://helldragonpz.github.io/TanadosLinux-Downloads/)
