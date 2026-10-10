@@ -2,10 +2,168 @@
   "schemaVersion": 1,
   "checkedAt": "2026-10-10",
   "policy": {
-    "bg": "Linux версия и Proton маршрут не доказват успешна игра. За непроверено заглавие провери преди да замениш Windows. Игри извън каталога са непроверени.",
-    "en": "A Linux build or Proton route does not prove gameplay. Check untested games before replacing Windows. Games outside this catalog are unverified."
+    "bg": "„Проверена и работеща“ означава документирана игра на Tanados, с дата, runtime и конкретен обхват. Налична Linux версия, инсталация или стартиран launcher не доказват gameplay. Провери непроверените игри и твоя хардуер преди да замениш Windows.",
+    "en": "Verified working means documented gameplay on Tanados, with a date, runtime and specific scope. A Linux build, installation or running launcher does not prove gameplay. Test unverified games and your hardware before replacing Windows."
   },
   "games": [
+    {
+      "id": "mu-origins",
+      "title": "Mu Origins (MuOrigin clients)",
+      "launchPlatform": "proton",
+      "playStatus": "verified",
+      "multiplayerStatus": "verified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://mu-origins.com/",
+      "reason": {
+        "bg": "Проверена онлайн игра: три едновременно работещи клиента с герои в игровия свят. Записът се отнася за Mu Origins, не за всички MU сървъри или мобилния MU Origin.",
+        "en": "Online gameplay verified: three concurrent clients with characters in the game world. This record covers Mu Origins, not every MU server or the mobile MU Origin."
+      },
+      "verification": {
+        "kind": "observed-gameplay",
+        "testedAt": "2026-10-10",
+        "runtime": "GE-Proton11-5 via umu / Tanados MuOrigin profile",
+        "hardware": "Tanados Obsidian · KDE Wayland · GeForce RTX 3090 · NVIDIA 595.91.07",
+        "reportUrl": "https://github.com/helldragonpz/TanadosLinux-Downloads/blob/main/GAME-TESTS.md#mu-origins",
+        "summary": {
+          "bg": "Проверени са живите main.exe процеси, тяхната Proton среда и три игрови прозореца с данни за герои и нива. Запазеният по-ранен тест показва пет отворени клиента; gameplay е потвърден за първите три.",
+          "en": "Live main.exe processes, their Proton environment and three game windows containing character and level state were checked. An earlier saved test shows five open clients; gameplay is confirmed for the first three."
+        },
+        "limitations": {
+          "bg": "Не е извършен нов тест след затваряне или рестарт. Няма FPS benchmark, тест на всички игрови режими или гаранция за бъдещи клиентски и anti-cheat обновления.",
+          "en": "No new close/reopen or reboot test was performed. No FPS benchmark, every-mode test or guarantee for future client and anti-cheat updates."
+        }
+      },
+      "libraryRouteIds": [
+        "tanados:muorigin",
+        "tanados:muorigin-2",
+        "tanados:muorigin-3",
+        "desktop:org.tanados.MuOrigin",
+        "desktop:org.tanados.MuOrigin2",
+        "desktop:org.tanados.MuOrigin3"
+      ]
+    },
+    {
+      "id": "black-myth-wukong",
+      "title": "Black Myth: Wukong",
+      "launchPlatform": "proton",
+      "playStatus": "needs-setup",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/2358720/",
+      "reason": {
+        "bg": "Намерени са Linux Steam/Proton сесии, включително около 48 минути на 12.09.2026. По-късните опити на 19.09 приключват за секунди. Библиотеката в момента е недостъпна; нужна е актуална gameplay проверка.",
+        "en": "Linux Steam/Proton sessions were found, including about 48 minutes on 2026-09-12. Later attempts on September 19 ended within seconds. The library is currently unavailable; current gameplay needs a retest."
+      },
+      "steamAppId": 2358720,
+      "libraryRouteIds": [
+        "steam:2358720",
+        "desktop:Black Myth Wukong"
+      ]
+    },
+    {
+      "id": "tanados-wow",
+      "title": "Tanados WoW / WarcraftXL",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://tanados.com/",
+      "reason": {
+        "bg": "Намерени са WoW клиентът, native Tanados Launcher, Proton launch запис и успешна автентикация/списък с герои в запазените логове. Това не потвърждава актуално влизане в игровия свят.",
+        "en": "The WoW client, native Tanados Launcher, a Proton launch record and successful authentication/character-list logs were found. These do not confirm current gameplay in the world."
+      },
+      "libraryRouteIds": [
+        "tanados:tanadoswow"
+      ]
+    },
+    {
+      "id": "world-of-warcraft",
+      "title": "World of Warcraft (Battle.net)",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://worldofwarcraft.blizzard.com/",
+      "reason": {
+        "bg": "Наличен е Battle.net профил с Proton Experimental. Пътят към retail клиента е на недостъпен в момента диск. Работещ launcher не потвърждава игра или онлайн поддръжка.",
+        "en": "A Battle.net profile using Proton Experimental is present. The retail client path is on a currently unavailable drive. A working launcher does not verify gameplay or online support."
+      },
+      "libraryRouteIds": [
+        "tanados:worldofwarcraft",
+        "desktop:org.tanados.WorldOfWarcraft"
+      ]
+    },
+    {
+      "id": "warcraft-iii-reforged",
+      "title": "Warcraft III: Reforged",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://warcraft3.blizzard.com/",
+      "reason": {
+        "bg": "Наличен е standalone Proton профил, но executable файлът в момента е недостъпен. Няма потвърдена актуална игра или multiplayer тест.",
+        "en": "A standalone Proton profile is present, but its executable is currently unavailable. Current gameplay and multiplayer have not been confirmed."
+      },
+      "libraryRouteIds": [
+        "tanados:warcraft3",
+        "desktop:org.tanados.WarcraftIII"
+      ]
+    },
+    {
+      "id": "clair-obscur-expedition-33",
+      "title": "Clair Obscur: Expedition 33",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/1903340/",
+      "reason": {
+        "bg": "Намерени са Steam запис и Linux Proton опит на 01.09.2026, приключил след около пет секунди. Това не е gameplay тест. Библиотеката в момента е недостъпна.",
+        "en": "A Steam record and a Linux Proton attempt on 2026-09-01 lasting about five seconds were found. This is not a gameplay test. The library is currently unavailable."
+      },
+      "steamAppId": 1903340,
+      "libraryRouteIds": [
+        "steam:1903340",
+        "desktop:Clair Obscur Expedition 33"
+      ]
+    },
+    {
+      "id": "hell-is-us",
+      "title": "Hell is Us",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/1620730/",
+      "reason": {
+        "bg": "Намерени са Steam library запис и desktop shortcut. Няма потвърдена Linux gameplay сесия в проверените логове; библиотеката в момента е недостъпна.",
+        "en": "A Steam library record and desktop shortcut were found. No Linux gameplay session was confirmed in the inspected logs; the library is currently unavailable."
+      },
+      "steamAppId": 1620730,
+      "libraryRouteIds": [
+        "steam:1620730",
+        "desktop:Hell is Us"
+      ]
+    },
+    {
+      "id": "gta-v-enhanced-story",
+      "title": "Grand Theft Auto V Enhanced — Story Mode",
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/3240220/",
+      "reason": {
+        "bg": "Наличен е Rockstar/Proton профил, но launcher готовност не потвърждава Story Mode. GTA Online остава отделен неподдържан запис.",
+        "en": "A Rockstar/Proton profile is present, but launcher readiness does not verify Story Mode. GTA Online remains a separate unsupported entry."
+      },
+      "steamAppId": 3240220,
+      "libraryRouteIds": [
+        "tanados:gta5",
+        "desktop:org.tanados.GTAV"
+      ]
+    },
     {
       "id": "counter-strike-2",
       "title": "Counter-Strike 2",
@@ -18,7 +176,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:730"
+      ]
     },
     {
       "id": "dota-2",
@@ -32,7 +193,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:570"
+      ]
     },
     {
       "id": "team-fortress-2",
@@ -46,7 +210,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:440"
+      ]
     },
     {
       "id": "stardew-valley",
@@ -60,7 +227,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:413150"
+      ]
     },
     {
       "id": "terraria",
@@ -74,7 +244,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:105600"
+      ]
     },
     {
       "id": "hollow-knight",
@@ -88,7 +261,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:367520"
+      ]
     },
     {
       "id": "factorio",
@@ -102,7 +278,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:427520"
+      ]
     },
     {
       "id": "rimworld",
@@ -116,7 +295,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:294100"
+      ]
     },
     {
       "id": "portal-2",
@@ -130,7 +312,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:620"
+      ]
     },
     {
       "id": "left-4-dead-2",
@@ -144,7 +329,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:550"
+      ]
     },
     {
       "id": "celeste",
@@ -158,7 +346,10 @@
       "reason": {
         "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
         "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:504230"
+      ]
     },
     {
       "id": "baldurs-gate-3",
@@ -172,7 +363,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:1086940"
+      ]
     },
     {
       "id": "cyberpunk-2077",
@@ -186,7 +380,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:1091500"
+      ]
     },
     {
       "id": "elden-ring",
@@ -200,7 +397,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:1245620"
+      ]
     },
     {
       "id": "witcher-3",
@@ -214,7 +414,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:292030"
+      ]
     },
     {
       "id": "hogwarts-legacy",
@@ -228,7 +431,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:990080"
+      ]
     },
     {
       "id": "no-mans-sky",
@@ -242,7 +448,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:275850"
+      ]
     },
     {
       "id": "skyrim-special-edition",
@@ -256,7 +465,10 @@
       "reason": {
         "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
         "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
-      }
+      },
+      "libraryRouteIds": [
+        "steam:489830"
+      ]
     },
     {
       "id": "fortnite",

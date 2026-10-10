@@ -1,73 +1,102 @@
-# Tanados Gaming Journey 0.3.0 preview
+# Tanados Gaming Journey
 
-Осем нови функции за по-лесно започване с Linux: проверка на игрите преди
-инсталация, настройка с продължаване след рестарт, обща Game Library, запазване
-на лично проверен Proton профил, защита на обновяванията при активна игра,
-копиране на Steam файлове от Windows, звук/контролер/захранване и локална
-диагностика през Lumi.
+Gaming Journey connects the compatibility checker, first boot, Game Library,
+Game Studio, system updates and Lumi. The UI uses the selected KDE palette and
+supports Bulgarian and English. The system helper is native Qt/C++; it does not
+invoke a shell or require Python.
 
-## Как да ги получиш
+## The eight connected features
 
-**ISO е 0.2.0.** Media Creator **0.3.0** включва новия каталог и автоматично
-сваля този проверен ISO. Осемте desktop функции се добавят с подписаното
-обновяване **0.3.0 preview** след инсталацията. Няма нов ISO, който да твърдим,
-че е преминал boot/install проверките.
+1. **Check before installing.** The website and Media Creator share a dated,
+   bundled game catalog. Linux builds, proposed Proton routes, multiplayer
+   limitations and actual Tanados tests are separate facts. Verified entries
+   require a dated gameplay report, runtime, hardware, bilingual evidence and
+   limitations. The 2026-10-10 inventory adds Mu Origins as observed working
+   online, alongside seven other locally discovered titles with their actual
+   evidence status. A shortcut, installation, launcher or process lifetime
+   cannot confer gameplay verification. Filters expose verified, untested and
+   unsupported titles. See [the test record](GAME-TESTS.md). Games outside the
+   list are unverified, and selecting an unsupported title keeps an explicit
+   warning visible even when filters hide its card.
+2. **Resume first boot.** Gaming Setup has five stages: connection, devices,
+   stores, games and play. Choices and progress persist after closing or
+   restarting. Completing setup is an explicit action; unfinished hardware checks
+   remain visible and can be reopened from the application menu.
+3. **One play surface.** Game Library keeps its existing Steam, Heroic, Lutris,
+   standalone, native and Proton routes. Setup opens the shared journey; each
+   game's Check & profile opens its contextual diagnostic screen. Launches remain
+   scoped to the selected installed route.
+4. **Preserve reported working Proton settings.** The user saves a profile after
+   personally testing the game. Steam mappings and Tanados-managed external
+   Proton profiles can be restored, with an undo receipt for the current setting.
+   Restore requires idle games, closed Steam, the same route and an installed
+   runtime. It changes only the selected game. Other launchers keep managing their
+   own settings. Game Studio Undo also preserves later changes to other games.
+5. **Respect active games during updates.** System Hub checks tracked game units
+   and Steam/Proton processes before applying system, desktop, Flatpak, Snap or
+   firmware updates. The privileged helper independently checks the authorized
+   desktop account using fixed system executables. An unavailable activity check
+   blocks installation. Browsing releases and refreshing metadata remain usable.
+   Signed channel packages download from the public distribution repository without
+   a GitHub account. HTTPS redirects stay on GitHub asset hosts and every package
+   must match the pinned Ed25519 key, channel, size and SHA-256.
+   Existing Btrfs Recovery requirements remain in force; firmware is not covered
+   by system snapshots.
+6. **Reuse Windows Steam downloads.** Choose an already mounted Steam library,
+   a detected game and a registered Linux library. Preview shows size, free space
+   and filesystem. Copy requires Steam closed and enough free space; it rejects
+   links, special files, overlapping folders and existing destinations. Source
+   and preview are rechecked after copying. Publication cannot overwrite a racing
+   destination. Windows prefixes and save files are preserved at their original
+   location. Open Steam and verify the copied files. Publisher updates may still
+   require downloading Linux-specific or changed files.
+7. **Controller, sound and laptop setup.** Choose actual audio outputs and
+   microphones, open KDE's device tests, inspect controllers, use Game Library
+   couch mode or Steam Big Picture, and select an available power profile. The
+   optional GPU economy setting pauses Resonance and Lumi's 3D rendering during
+   tracked/Steam/Proton game activity; voice and conversation state remain intact.
+   It restores rendering afterward and expires a stale watcher heartbeat.
+8. **Lumi diagnoses observed evidence.** Say `diagnose game [title]` or
+   `провери играта [име]`. Lumi uniquely matches the installed title and reads
+   route readiness, file accessibility, Vulkan and the last tracked session's
+   bounded error evidence. `fix game [title]` / `поправи играта [име]` opens that
+   game's reviewed repair screen after confirmation. It does not run model-written
+   commands or automatically change drivers, profiles or anti-cheat settings.
 
-1. Инсталирай Tanados от [официалната страница](https://helldragonpz.github.io/TanadosLinux-Downloads/).
-2. Затвори игрите и Steam.
-3. Свали [Tanados-Gaming-Journey-0.3.0-Linux-amd64.tar.gz](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/download/updates-preview/Tanados-Gaming-Journey-0.3.0-Linux-amd64.tar.gz).
-4. Разархивирай го и отвори терминал в папката `Tanados-Gaming-Journey-0.3.0`.
+## Local state and support
 
-```sh
-bash Install-Tanados-Desktop.sh --verify preview
-bash Install-Tanados-Desktop.sh --apply preview
-```
+`~/.local/state/tanados/gaming` contains setup progress, user-reported working
+profiles, per-game restore receipts, bounded last-session evidence, import
+receipts and locally exported support reports. Configuration files are written
+atomically with owner-only access. The catalog is under
+`/usr/share/tanados/gaming/catalog.json` or the corresponding user install path.
 
-Първата команда проверява фиксирания публичен ключ, Ed25519 подписа и SHA-256
-на пакета. Втората проверява за активни игри и използва стандартния системен
-диалог за парола за инсталирането. Инсталирай върху Tanados/Ubuntu 26.04 AMD64;
-пакетът изисква Qt 6.10. Отвори **Gaming Setup** от менюто след обновяването.
-Настройката поддържа български и английски и пази прогреса автоматично.
+Support export includes structured diagnostics, not command arrays, account
+configuration, environment variables or complete logs. Review the local report
+before sharing. No report is uploaded automatically.
 
-## Какво се променя
+The session watcher is `tanados-gaming-session.service`, started by KDE autostart.
+Activity detection covers Tanados tracked sessions and Steam/Proton environment
+markers. Games launched through an unrelated application without either marker
+may not be detected; close those before updating. Controller tests require the
+actual device. Native/proposed Proton catalog routes require individual gameplay
+and multiplayer acceptance on the target hardware.
 
-- Каталогът в сайта и Media Creator разделя Linux версията, предложения Proton
-  маршрут, multiplayer ограниченията и личните Tanados тестове. Непознатите
-  игри са непроверени; неподдържаните остават с предупреждение.
-- Welcome води през връзка, устройства, магазини, игри и Play. Клиентите могат
-  да се инсталират за текущия потребител от Flathub; акаунтите се въвеждат в тях.
-- Game Library има Setup и **Check & profile** за избраната игра.
-- След успешен личен тест запазваш поддържания Steam/Tanados Proton профил.
-  Restore променя само тази игра, архивира текущия профил и пази другите игри.
-- Новият System Hub отказва инсталирането на обновяване при открита активна
-  игра. Новият канал за подписани пакети е публичен и не изисква GitHub акаунт.
-- Steam файловете се копират от вече монтирана Windows библиотека в регистрирана
-  Linux библиотека след преглед на мястото и размера. Източникът остава непокътнат,
-  съществуващи цели не се презаписват. След копирането провери файловете в Steam.
-- Избираш реален аудио изход/микрофон, отваряш KDE тестовете, Steam Big Picture
-  и наличните power профили. GPU economy спира Resonance и 3D Lumi по време на
-  открита игра и ги възстановява след нея; настройката може да се изключи.
-- Lumi разбира **„провери играта [име]“** и **„поправи играта [име]“**. Чете
-  реалния маршрут, достъпа до файловете, Vulkan и последната проследена сесия.
-  Поправянето отваря прегледа за конкретната игра след потвърждение.
+## Build and validation
 
-## Ограничения и проверка
+Build `tanados-gaming`, Welcome, Game Library, Game Studio, System Hub, Resonance,
+Lumi renderer and assistant service from the normal CMake tree. No separate
+runtime language is introduced. `gaming-workflows` exercises the real native
+transactions in temporary homes; `native-gaming-update-guard` checks blocked and
+unknown activity. Existing assistant, Game Library, Game Studio, Resonance,
+Plasma QML and source-audit checks remain required.
 
-Нито една от първите 21 игри още не е лично gameplay-тествана от Tanados.
-Проверете конкретните игри, multiplayer и устройствата на вашия компютър.
-Game Library couch mode използва клавиатурна навигация; Steam Big Picture
-предоставя интерфейса за контролер. Независимо стартирани игри без Tanados
-сесия или Steam/Proton маркери може да не бъдат открити от update guard.
-Включете Btrfs Recovery в Control Center преди следващи системни обновявания.
+Run `node tools/sync-gaming-catalog.mjs --check` to verify that the public website
+and Media Creator contain exactly the same catalog and compatibility UI as the
+source. Media Creator's USB write confirmation, device revalidation, image hash
+and read-back verification remain unchanged.
 
-Докладите за помощ се записват само локално, без автоматично изпращане.
-[Проверки на изданието](GAMING-JOURNEY-VALIDATION.md).
-
-## English
-
-Install the accepted **0.2.0 ISO**, close games and Steam, download/extract the
-signed Gaming Journey archive above and run the two verification/install commands.
-The package targets Tanados/Ubuntu 26.04 AMD64 with Qt 6.10. Open **Gaming Setup**
-afterward and select EN. The eight features are delivered by the **0.3.0 preview
-desktop update**; Media Creator 0.3.0 adds the pre-install game checker and still
-downloads ISO 0.2.0. No game is marked personally gameplay-verified by Tanados.
+A source push, a locally applied desktop build, a signed desktop package and an
+ISO release are different artifacts. Release notes must identify which artifact
+includes Gaming Journey; an older ISO does not acquire these changes merely
+because the website or Media Creator is updated.
