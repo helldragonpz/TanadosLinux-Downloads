@@ -88,7 +88,7 @@ fetch('content.json?v=0.3.1').then(r=>{if(!r.ok)throw Error('Translation file');
 fetch('release.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Release file');return r.json();}).then(d=>{release=validateRelease(d);renderPlatform();}).catch(()=>{if($('#release-error'))$('#release-error').hidden=false;});
 if(language==='bg')applyLanguage();
 
-if ($('#game-compatibility')) fetch('gaming-catalog.json?v=0.3.1').then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json();}).then(catalog=>{
+if ($('#game-compatibility')) fetch('gaming-catalog.json?v=0.3.1-expedition',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json();}).then(catalog=>{
  let selected=[];try{selected=JSON.parse(localStorage.getItem('tanados-selected-games')||'[]');if(!Array.isArray(selected))selected=[];}catch{}
  gameCompatibility=window.TanadosCompatibility($('#game-compatibility'),catalog,{language,selected,onSelection:ids=>{try{localStorage.setItem('tanados-selected-games',JSON.stringify(ids));}catch{}}});
 }).catch(()=>{$('#game-compatibility').textContent=language==='bg'?'Каталогът не се зареди. Съвместимостта е непроверена.':'The catalog could not load. Compatibility is unverified.';});

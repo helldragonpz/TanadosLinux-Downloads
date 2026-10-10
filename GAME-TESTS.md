@@ -12,7 +12,7 @@ successful gameplay. Owner-confirmed gameplay is explicitly identified.
 | Grand Theft Auto V | **Verified working; owner-confirmed** | Owner reports working GTA V; Enhanced files and a Proton profile are installed. The mode and exact gameplay version were not specified. **This does not certify GTA Online.** |
 | Tanados WoW / WarcraftXL route | Specific route unverified | Client files, native launcher, Proton process and authentication/character-list records; the generic owner report does not identify this route. |
 | Warcraft III: Reforged | Gameplay unverified | Installed executable and standalone Proton profile found. |
-| Clair Obscur: Expedition 33 | Gameplay unverified | Installed Steam files; a previous launch ended after about five seconds. |
+| Clair Obscur: Expedition 33 | **Owner-confirmed ownership and launch** | The owner confirms owning the Steam game and previously launching it on Tanados. Multiple Proton launch records were found; gameplay scope is being clarified. |
 | Hell is Us | Gameplay unverified | Installed Steam files and shortcut; no gameplay was observed during this review. |
 | Valheim | Gameplay unverified | Installed files and manifest found in a second, Windows Steam library. |
 
@@ -94,6 +94,17 @@ ODbL. See [ProtonDB data provenance](PROTONDB-DATA.md).
 - The played edition/mode and exact gameplay runtime were not recorded. A new
   Story Mode session was not observed. GTA Online remains a separate unsupported
   entry; no anti-cheat bypass or successful online claim is made.
+
+## Clair Obscur: Expedition 33
+
+- **Recorded:** 2026-10-10; **owner-confirmed Steam ownership and launch**.
+- The owner confirmed owning the game and having launched it on Tanados.
+- Installed files and the registered Steam route are READY after the NTFS repair.
+- Earlier review gave too much weight to a brief later launch. Steam compatibility
+  logs also record a session from 10:17:39 to 10:22:08 on 2026-09-01, alongside
+  shorter launch records. Session lifetime does not establish time in gameplay.
+- A gameplay confirmation, precise successful Proton version and fresh observation
+  are not yet recorded. No new game launch or FPS test was performed.
 
 ## Evidence policy
 
