@@ -18,11 +18,21 @@ successful gameplay. Owner-confirmed gameplay is explicitly identified.
 
 ## Storage and catalog scope
 
-Three physically present NTFS volumes refused normal writable mounting: all were
-marked dirty and their `$MFTMirr` record 3 differed from `$MFT`. They are accessible
-through read-only mounts for inventory. Hash-verified copies of selected metadata
-were saved locally; repairs and writable mounting await explicit owner approval.
+Three physically present NTFS volumes initially refused normal writable mounting:
+all were marked dirty and their `$MFTMirr` record 3 differed from `$MFT`. After the
+owner explicitly authorized repair on 2026-10-10, hash-verified metadata backups
+were checked, each disk was normally unmounted, and the reviewed limited NTFS
+repair was run once. Offline consistency checks and the read/write probe passed.
+All three now use normal writable `ntfs3` mounts, with UUID-based boot entries.
+
+Create/write/fsync/rename/read/delete checks passed at all three mount roots and
+in every previously affected game directory (13 directories total). The second
+Steam library was registered while Steam was closed; both existing library
+records were preserved. A fresh Game Library inventory shows all **10 previously
+READ ONLY entries as READY**, and **zero READ ONLY entries**. READY describes
+available files and launch routes; it does not add a new gameplay test.
 No active Mu Origins client or working Proton profile was restarted or modified.
+See [storage recovery procedure and limits](NTFS-STORAGE-RECOVERY.md).
 
 The catalog also bundles **31,276 titles with successful ProtonDB reports**, from
 the official **2026-10-01** export. These are community reports from Linux/Steam
