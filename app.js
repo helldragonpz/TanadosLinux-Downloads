@@ -84,11 +84,11 @@ function validateRelease(d){
  if(d.mediaCreator?.tag!=='v0.3.1-media-creator'||d.mediaCreator?.version!=='0.3.1')throw Error('Unexpected Media Creator');
  for(const k of ['windows','linux','portable']){const a=d.mediaCreator?.[k];if(!a||!/^[A-Za-z0-9_.-]+$/.test(a.name)||!Number.isSafeInteger(a.size)||a.size<=0)throw Error('Invalid package');}return d;
 }
-fetch('content.json').then(r=>{if(!r.ok)throw Error('Translation file');return r.json();}).then(d=>{if(!d.bg||!d.en||Object.keys(d.bg).length!==Object.keys(d.en).length)throw Error('Incomplete translation');copy=d;applyLanguage();}).catch(()=>{language='bg';applyLanguage();$('#language').disabled=true;});
+fetch('content.json?v=0.3.1').then(r=>{if(!r.ok)throw Error('Translation file');return r.json();}).then(d=>{if(!d.bg||!d.en||Object.keys(d.bg).length!==Object.keys(d.en).length)throw Error('Incomplete translation');copy=d;applyLanguage();}).catch(()=>{language='bg';applyLanguage();$('#language').disabled=true;});
 fetch('release.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('Release file');return r.json();}).then(d=>{release=validateRelease(d);renderPlatform();}).catch(()=>{if($('#release-error'))$('#release-error').hidden=false;});
 if(language==='bg')applyLanguage();
 
-if ($('#game-compatibility')) fetch('gaming-catalog.json').then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json();}).then(catalog=>{
+if ($('#game-compatibility')) fetch('gaming-catalog.json?v=0.3.1').then(r=>{if(!r.ok)throw Error('Catalog unavailable');return r.json();}).then(catalog=>{
  let selected=[];try{selected=JSON.parse(localStorage.getItem('tanados-selected-games')||'[]');if(!Array.isArray(selected))selected=[];}catch{}
  gameCompatibility=window.TanadosCompatibility($('#game-compatibility'),catalog,{language,selected,onSelection:ids=>{try{localStorage.setItem('tanados-selected-games',JSON.stringify(ids));}catch{}}});
 }).catch(()=>{$('#game-compatibility').textContent=language==='bg'?'Каталогът не се зареди. Съвместимостта е непроверена.':'The catalog could not load. Compatibility is unverified.';});
