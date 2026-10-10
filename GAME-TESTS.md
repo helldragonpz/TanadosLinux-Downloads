@@ -1,26 +1,39 @@
 # Tanados game test records
 
-Evidence reviewed: **2026-10-10**. Public records deliberately omit account data,
-character names, credentials, complete logs and personal installation paths.
-Installed launchers and desktop shortcuts are not gameplay tests. Multiple
-clients of one game count as one catalog title.
+Evidence reviewed: **2026-10-10**. Records omit account details, character names,
+credentials, full logs and personal paths. An installed launcher is distinct from
+successful gameplay. Owner-confirmed gameplay is explicitly identified.
 
 | Game | Status | Evidence / scope |
 | --- | --- | --- |
-| Mu Origins | **Verified working; online** | Three live clients in the game world using GE-Proton11-5. |
-| Black Myth: Wukong | Needs setup / retest | A Linux Steam/Proton session lasted about 48 minutes on September 12; later September 19 attempts ended within seconds. Current gameplay is unconfirmed. |
-| Tanados WoW / WarcraftXL | Gameplay unverified | Client files, native launcher, Proton process confirmation and successful authentication/character-list records. |
-| World of Warcraft (Battle.net) | Gameplay unverified | Battle.net / Proton Experimental profile; the retail client drive is currently unavailable. |
-| Warcraft III: Reforged | Gameplay unverified | Standalone Proton profile; game executable currently unavailable. |
-| Clair Obscur: Expedition 33 | Gameplay unverified | Linux Steam/Proton attempt on September 1 ended after about five seconds. |
-| Hell is Us | Gameplay unverified | Steam library metadata and desktop shortcut; no confirmed Linux gameplay session in the inspected logs. |
-| GTA V Enhanced — Story Mode | Gameplay unverified | Rockstar / Proton profile; launcher availability does not prove Story Mode. GTA Online remains a separate unsupported entry. |
+| Mu Origins | **Verified working; online** | Directly observed: three clients in the game world through GE-Proton11-5. |
+| Black Myth: Wukong | **Verified working; owner-confirmed** | The owner explicitly confirmed successful Steam gameplay; saved Linux Steam sessions include about 48 minutes on September 12. |
+| World of Warcraft | **Verified working; owner-confirmed** | Owner reports working WoW. The played edition, server and exact Proton version were not specified. |
+| Grand Theft Auto V | **Verified working; owner-confirmed** | Owner reports working GTA V; Enhanced files and a Proton profile are installed. The mode and exact gameplay version were not specified. **This does not certify GTA Online.** |
+| Tanados WoW / WarcraftXL route | Specific route unverified | Client files, native launcher, Proton process and authentication/character-list records; the generic owner report does not identify this route. |
+| Warcraft III: Reforged | Gameplay unverified | Installed executable and standalone Proton profile found. |
+| Clair Obscur: Expedition 33 | Gameplay unverified | Installed Steam files; a previous launch ended after about five seconds. |
+| Hell is Us | Gameplay unverified | Installed Steam files and shortcut; no gameplay was observed during this review. |
+| Valheim | Gameplay unverified | Installed files and manifest found in a second, Windows Steam library. |
 
-The Steam library drive was not mounted during this inspection. No disk mounts,
-filesystem repairs, driver changes, game restarts or changes to working Proton
-profiles were performed. The initial 21 catalog games retain their previous
-untested or unsupported status. Existing ISO and downloadable app releases are
-separate artifacts; this catalog update does not rebuild them.
+## Storage and catalog scope
+
+Three physically present NTFS volumes refused normal writable mounting: all were
+marked dirty and their `$MFTMirr` record 3 differed from `$MFT`. They are accessible
+through read-only mounts for inventory. Hash-verified copies of selected metadata
+were saved locally; repairs and writable mounting await explicit owner approval.
+No active Mu Origins client or working Proton profile was restarted or modified.
+
+The catalog also bundles **31,276 titles with successful ProtonDB reports**, from
+the official **2026-10-01** export. These are community reports from Linux/Steam
+Deck systems, not personal Tanados tests or a promise about every hardware setup.
+Each title displays report counts, the last successful report date, the runtime
+family and a warning if the latest report failed. Some reports are old or require
+tweaks; check the linked current reports before purchasing or replacing Windows.
+
+The website, first-boot checker and Media Creator show at most 24 cards per page.
+Community data is available offline in the bundled catalog and attributed under
+ODbL. See [ProtonDB data provenance](PROTONDB-DATA.md).
 
 ## Mu Origins
 
@@ -43,24 +56,47 @@ separate artifacts; this catalog update does not rebuild them.
   anti-cheat updates. No active client was closed or modified.
 - **Game website:** [Mu Origins](https://mu-origins.com/).
 
-## How a title earns verified status
 
-Record gameplay inside the game world or an actual playable level, its date,
-runtime and hardware, then describe precisely what worked and what remains
-untested. Owner-confirmed gameplay is labelled separately from directly observed
-gameplay. Online success requires its own evidence. A native Linux release, an
-installed executable, a Steam launch record, a long-running service or a saved
-launcher profile alone leaves gameplay unverified. Regressions should add a
-dated retest note instead of silently preserving a working claim.
+## Black Myth: Wukong
+
+- **Recorded:** 2026-10-10; **owner-confirmed gameplay**.
+- The owner explicitly stated they own it on Steam and it works on Tanados.
+- Saved Linux Steam/Proton sessions independently confirm prior launches,
+  including approximately 48 minutes on 2026-09-12. Short later launch records
+  do not overrule the owner's gameplay confirmation or establish incompatibility.
+- Exact gameplay Proton version, FPS, settings and a fresh gameplay observation
+  were not recorded. Drive availability is tracked separately from compatibility.
+
+## World of Warcraft
+
+- **Recorded:** 2026-10-10; **owner-confirmed gameplay**.
+- The owner listed WoW among games working on their Tanados desktop.
+- Retail client files, Tanados WoW copies and existing Proton routes are present.
+- The message does not identify the played client edition, server or modes. This
+  general record therefore does not certify every retail/private-server route.
+- No fresh login/gameplay, exact runtime version or FPS benchmark was recorded.
+
+## Grand Theft Auto V
+
+- **Recorded:** 2026-10-10; **owner-confirmed gameplay**.
+- The owner listed GTA V among their working games. Local files identify an
+  Enhanced installation and an existing Rockstar/Proton Experimental route.
+- The played edition/mode and exact gameplay runtime were not recorded. A new
+  Story Mode session was not observed. GTA Online remains a separate unsupported
+  entry; no anti-cheat bypass or successful online claim is made.
+
+## Evidence policy
+
+A working claim needs a dated gameplay observation or an explicit owner report.
+Record runtime and hardware when known and mark unknown details plainly.
+Installed files and launch records add inventory evidence but cannot establish
+FPS, every-mode compatibility or online success. Community reports are displayed
+with their source and date; they never become a personal Tanados verification.
 
 ## Български
 
-Проверка на 10.10.2026: **Mu Origins е проверена и работеща онлайн**, с три
-едновременно работещи клиента в игровия свят през GE-Proton11-5. По-ранен запис
-показва пет отворени клиента; тук gameplay е потвърден само за първите три.
-
-Другите намерени игри имат запис за наличните доказателства и остават за
-gameplay проверка. При Wukong са открити и по-късни неуспешни стартирания.
-Налична инсталация, launcher или shortcut не означава „проверена и работеща“.
-Дискът със Steam библиотеката в момента е недостъпен. Не са извършвани
-монтирания или промени по игрите и работещите Proton профили.
+Wukong, World of Warcraft и GTA V са добавени като работещи с потвърждение от
+собственика на 10.10.2026. За WoW и GTA не са посочени конкретните издание и
+режим; не обявяваме GTA Online за работещ. Mu Origins е наблюдавана пряко с три
+клиента в игровия свят. Допълнително има 31 276 заглавия с успешни ProtonDB
+отчети, ясно обозначени като данни от общността, с дата и ограничения.

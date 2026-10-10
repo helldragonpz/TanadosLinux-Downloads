@@ -63,6 +63,20 @@ invoke a shell or require Python.
    game's reviewed repair screen after confirmation. It does not run model-written
    commands or automatically change drivers, profiles or anti-cheat settings.
 
+## The complete community catalog
+
+The bundled checker contains 31,276 Steam titles with successful ProtonDB
+reports (2026-10-01 snapshot), alongside dated personal Tanados gameplay records.
+Search and 24-card pages keep the website, first boot and Media Creator usable.
+The Proton community filter shows successes, total reports, dates and a latest
+failure warning. A community report does not upgrade a title to personally
+verified. See [data provenance and license](PROTONDB-DATA.md).
+
+Game Library also finds conventional Steam libraries on already mounted media,
+including Windows libraries. It labels unregistered libraries and read-only
+storage, and does not treat Steam shortcuts as native Linux gameplay evidence.
+No drives are automatically repaired and no Steam settings are changed by scans.
+
 ## Local state and support
 
 `~/.local/state/tanados/gaming` contains setup progress, user-reported working
@@ -100,3 +114,33 @@ A source push, a locally applied desktop build, a signed desktop package and an
 ISO release are different artifacts. Release notes must identify which artifact
 includes Gaming Journey; an older ISO does not acquire these changes merely
 because the website or Media Creator is updated.
+
+
+## Install the current catalog update
+
+The public installer ISO remains **0.2.0**. **Media Creator 0.3.1** bundles the
+community checker and automatically downloads that ISO. First boot and Game
+Library receive the catalog through the signed **0.3.1 preview desktop update**.
+
+1. Install Tanados from the [official download page](https://helldragonpz.github.io/TanadosLinux-Downloads/).
+2. Close games and Steam before applying the desktop update.
+3. Download [Tanados-Gaming-Journey-0.3.1-Linux-amd64.tar.gz](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/download/v0.3.1-desktop-preview/Tanados-Gaming-Journey-0.3.1-Linux-amd64.tar.gz).
+4. Extract it, open a terminal in `Tanados-Gaming-Journey-0.3.1`, then run:
+
+```sh
+bash Install-Tanados-Desktop.sh --verify preview
+bash Install-Tanados-Desktop.sh --apply preview
+```
+
+The installer checks the pinned public key, Ed25519 manifest signature and
+package SHA-256. Installation uses the standard administrator dialog and checks
+for active games. The preview targets Tanados/Ubuntu 26.04 AMD64 with Qt 6.10.
+Open **Gaming Setup** after updating. Setup supports Bulgarian and English.
+The full ISO has not been rebuilt by this catalog update.
+
+### Български
+
+ISO остава **0.2.0**. Media Creator **0.3.1** включва новия каталог и сваля ISO
+автоматично. След инсталация добави подписаното desktop обновяване **0.3.1
+preview** от горния линк. Затвори игрите и Steam, разархивирай пакета и изпълни
+двете команди за проверка и инсталация. После отвори **Gaming Setup**.

@@ -29,19 +29,19 @@
     "checksumUrl": "https://wow.tanados.com/downloads/tanados-linux/0.2.0/Tanados-Obsidian-Tide-0.2.0-amd64.iso.sha256"
   },
   "mediaCreator": {
-    "version": "0.3.0",
-    "tag": "v0.3.0-media-creator",
+    "version": "0.3.1",
+    "tag": "v0.3.1-media-creator",
     "windows": {
-      "name": "Tanados-Media-Creator-0.3.0-Windows-x64.zip",
-      "size": 158893392
+      "name": "Tanados-Media-Creator-0.3.1-Windows-x64.zip",
+      "size": 159708733
     },
     "linux": {
-      "name": "Tanados-Media-Creator-0.3.0-Linux-amd64.deb",
-      "size": 96090930
+      "name": "Tanados-Media-Creator-0.3.1-Linux-amd64.deb",
+      "size": 96647886
     },
     "portable": {
-      "name": "Tanados-Media-Creator-0.3.0-Linux-x64.tar.gz",
-      "size": 123555045
+      "name": "Tanados-Media-Creator-0.3.1-Linux-x64.tar.gz",
+      "size": 124370460
     }
   },
   "validation": {
@@ -52,7 +52,7 @@
     "singleIsoDownload": true
   },
   "desktop": {
-    "version": "0.3.0~preview1",
+    "version": "0.3.1~preview1",
     "tag": "updates-preview",
     "ready": true
   }

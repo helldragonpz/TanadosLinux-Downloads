@@ -3,19 +3,19 @@
 
 ## Gaming Journey 0.3.0 preview
 
-Media Creator 0.3.0 includes the new game checker. The accepted ISO remains
+Media Creator 0.3.1 includes the new game checker. The accepted ISO remains
 **0.2.0**. All eight gaming workflows are available in the separate signed
 **0.3.0 preview desktop update**. After installation, close games and follow
 [the Gaming Journey guide](GAMING-JOURNEY.md).
 
-Media Creator 0.3.0 включва новия каталог за игри. Провереният ISO остава
+Media Creator 0.3.1 включва новия каталог за игри. Провереният ISO остава
 **0.2.0**. Осемте gaming функции идват с отделното подписано desktop обновяване
 **0.3.0 preview**. След инсталацията затвори игрите и следвай
 [ръководството Gaming Journey](GAMING-JOURNEY.md).
 
 **[Разгледай Tanados / Explore Tanados](https://helldragonpz.github.io/TanadosLinux-Downloads/)**
 
-**[Създай флашка с Media Creator 0.3.0 / Create a USB with Media Creator 0.3.0](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)**
+**[Създай флашка с Media Creator 0.3.1 / Create a USB with Media Creator 0.3.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)**
 
 Download the Windows or Linux app, select your USB and choose **Create USB**.
 Media Creator downloads the official ISO, verifies its checksum, writes the USB
@@ -37,7 +37,7 @@ system maintenance, a bilingual FAQ and illustrated installation instructions.
 - [Български offline guide](INSTALL.bg.md)
 - [English offline guide](INSTALL.md)
 - [Release evidence](RELEASE.md)
-- [Media Creator 0.3.0 packages and checksums](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.3.0-media-creator)
+- [Media Creator 0.3.1 packages and checksums](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.3.1-media-creator)
 - [Media Creator validation](MEDIA-CREATOR.md)
 - [Optional ISO fallback parts](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)
 - [Report a problem](https://github.com/helldragonpz/TanadosLinux-Downloads/issues)
