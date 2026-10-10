@@ -2,7 +2,7 @@
 
 Download **[Tanados Media Creator 0.3.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** for the Windows or Linux computer creating the USB.
 **You do not need to download Linux first.** Media Creator downloads the official image, checks it, writes your USB and verifies the complete copy automatically.
-Downloads are public and require no GitHub account. The OS image remains 0.2.0; Media Creator is 0.3.0.
+Downloads are public and require no GitHub account. The OS image remains 0.2.0; Media Creator is 0.3.1.
 
 See the **[illustrated installation guide](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=en)**.
 Use an x86-64 PC/laptop, a **16 GB+ USB**, an internet connection and **10 GB free** on the computer preparing it. Use NTFS/exFAT or a Linux filesystem for the cached 6.45 GB image; FAT32 cannot hold it.
@@ -80,26 +80,32 @@ halo to configure intensity, colors, pause or reduced motion. Other desktop
 widgets retain their positions. The previous scene is saved under
 `~/.local/state/tanados/wallpaper-layout/backups/`. The regular **Tanados
 Resonance** widget is also available from Plasma's widget menu. Lumi remains optional and off
-until enabled by the user. The signed desktop preview update channel currently
-requires access to the private source repository; APT system updates and the
-public installation downloads do not require it.
+until enabled by the user. The signed desktop preview update channel, APT system updates and public
+installation downloads require no GitHub account.
 
 If booting, graphics or installation fails, keep the installer log and report
 the PC/laptop model, GPU, firmware mode and the failing step to the person who
 sent you this preview. In the live session, the installer log is
 `/root/.cache/calamares/session.log`; use administrator access to copy it before
 shutting down the live session. Release-specific checks are recorded in
-[the release evidence](releases/OBSIDIAN-TIDE-0.2.0.md).
+[the release evidence](RELEASE.md).
 
+## Add Gaming Journey 0.3.1 preview
 
-## Gaming Journey 0.3.0 preview
+The download is still the tested 0.2.0 ISO. After installing and closing games,
+use the [signed Gaming Journey desktop update](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.3.1-desktop-preview).
+Download `Tanados-Gaming-Journey-0.3.1-Linux-amd64.tar.gz`, extract it and run:
 
-Media Creator 0.3.1 includes the new game checker. The accepted ISO remains
-**0.2.0**. All eight gaming workflows are available in the separate signed
-**0.3.0 preview desktop update**. After installation, close games and follow
-[the Gaming Journey guide](GAMING-JOURNEY.md).
+```sh
+cd Tanados-Gaming-Journey-0.3.1
+bash Install-Tanados-Desktop.sh --verify preview
+bash Install-Tanados-Desktop.sh --apply preview
+```
 
-Media Creator 0.3.1 включва новия каталог за игри. Провереният ISO остава
-**0.2.0**. Осемте gaming функции идват с отделното подписано desktop обновяване
-**0.3.0 preview**. След инсталацията затвори игрите и следвай
-[ръководството Gaming Journey](GAMING-JOURNEY.md).
+The first command verifies the pinned public key, Ed25519 signature and package
+SHA-256. The second checks game activity and asks for the normal system password
+to install the package. Open **Gaming Setup** from the app menu afterward.
+The privileged update guard is installed by this package. Enable Btrfs Recovery
+in Control Center before subsequent system updates. Future signed desktop
+packages can be fetched from the public preview channel without a GitHub account.
+Native/proposed Proton routes still require individual game and hardware testing.

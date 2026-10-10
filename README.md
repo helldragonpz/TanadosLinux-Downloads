@@ -1,16 +1,16 @@
 # Tanados Linux — Obsidian Tide 0.2.0
 
 
-## Gaming Journey 0.3.0 preview
+## Gaming Journey 0.3.1 preview
 
 Media Creator 0.3.1 includes the new game checker. The accepted ISO remains
 **0.2.0**. All eight gaming workflows are available in the separate signed
-**0.3.0 preview desktop update**. After installation, close games and follow
+**0.3.1 preview desktop update**. After installation, close games and follow
 [the Gaming Journey guide](GAMING-JOURNEY.md).
 
 Media Creator 0.3.1 включва новия каталог за игри. Провереният ISO остава
 **0.2.0**. Осемте gaming функции идват с отделното подписано desktop обновяване
-**0.3.0 preview**. След инсталацията затвори игрите и следвай
+**0.3.1 preview**. След инсталацията затвори игрите и следвай
 [ръководството Gaming Journey](GAMING-JOURNEY.md).
 
 **[Разгледай Tanados / Explore Tanados](https://helldragonpz.github.io/TanadosLinux-Downloads/)**
@@ -28,7 +28,7 @@ manual ISO download and four GitHub fallback parts remain optional for offline u
 ## Explore the distribution
 
 The public site includes detailed 0.2.0 changes, thirteen Tanados app profiles,
-24 real interface/VM captures with full-size viewing, original Aperture
+25 real interface/VM captures with full-size viewing, original Aperture
 portrait/landscape artwork, theme previews, Lumi capabilities and setup limits,
 system maintenance, a bilingual FAQ and illustrated installation instructions.
 
@@ -53,8 +53,8 @@ Linux USB volumes are unmounted automatically after image verification.
 
 This is a preview. Secure Boot must be off. Physical installation, native Windows
 USB writing/joining, dual boot, encryption and complete Recovery boot remain
-acceptance steps. Signed desktop preview updates still need private repository
-access; public installation downloads and APT system updates do not.
+acceptance steps. Signed desktop preview updates, public installation downloads and APT
+system updates require no GitHub account.
 
 GitHub Pages serves the root of main. Fonts retain their license in
 assets/INTER-LICENSE.txt; original generated Tanados wallpapers follow the
