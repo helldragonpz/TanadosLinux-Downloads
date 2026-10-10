@@ -1,8 +1,8 @@
 # Инсталиране на Tanados Obsidian Tide 0.2.0
 
-Свали **[Tanados Media Creator 0.2.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** за компютъра с Windows или Linux, от който ще създадеш флашката.
+Свали **[Tanados Media Creator 0.3.0](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** за компютъра с Windows или Linux, от който ще създадеш флашката.
 **Не е нужно първо да сваляш Linux.** Приложението само сваля официалния образ, проверява го, записва флашката и проверява целия запис.
-Файловете са публични и не изискват GitHub акаунт. Образът на Linux остава 0.2.0; Media Creator е 0.2.1.
+Файловете са публични и не изискват GitHub акаунт. Образът на Linux остава 0.2.0; Media Creator е 0.3.0.
 
 Отвори **[ръководството със снимки](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=bg)**.
 Нужни са x86-64 компютър, **16 GB+ флашка**, интернет и **10 GB свободно място** на компютъра, който подготвя USB. Кешираното ISO е 6.45 GB; използвай NTFS/exFAT или Linux файлова система, защото FAT32 не го побира.
@@ -10,12 +10,12 @@
 
 ## Отвори Media Creator
 
-На **Windows 10/11** разархивирай целия `Tanados-Media-Creator-0.2.1-Windows-x64.zip` и отвори `TanadosMediaCreator.exe`. Запази останалите файлове до EXE файла.
+На **Windows 10/11** разархивирай целия `Tanados-Media-Creator-0.3.0-Windows-x64.zip` и отвори `TanadosMediaCreator.exe`. Запази останалите файлове до EXE файла.
 
 На **Ubuntu/Debian** инсталирай DEB и отвори **Tanados Media Creator** от менюто:
 
 ```bash
-sudo apt install ./Tanados-Media-Creator-0.2.1-Linux-amd64.deb
+sudo apt install ./Tanados-Media-Creator-0.3.0-Linux-amd64.deb
 ```
 
 Linux portable архивът е алтернатива за системи с работещ Chromium sandbox.
@@ -69,3 +69,16 @@ bash ./Join-Tanados-ISO.sh
 Health, Recovery, Updates и Laptop & Firmware са в Control Center. Lumi е по избор и първоначално е изключена. Подписаният desktop preview канал все още изисква достъп до частното repo; APT системните обновления и публичните инсталационни файлове не го изискват.
 
 Физическа инсталация на PC/лаптоп, запис на USB от истински Windows, Secure Boot и recovery boot още не са преминали приемателните тестове за този образ. Виж **[провереното за версията](https://github.com/helldragonpz/TanadosLinux-Downloads/releases/tag/v0.2.0-tide-preview)**. При проблем изпрати модела на компютъра, GPU, firmware режима и стъпката, на която е възникнал. Log файлът на инсталатора е `/root/.cache/calamares/session.log` в live сесията; копирай го с администраторски достъп преди изключване.
+
+
+## Gaming Journey 0.3.0 preview
+
+Media Creator 0.3.0 includes the new game checker. The accepted ISO remains
+**0.2.0**. All eight gaming workflows are available in the separate signed
+**0.3.0 preview desktop update**. After installation, close games and follow
+[the Gaming Journey guide](GAMING-JOURNEY.md).
+
+Media Creator 0.3.0 включва новия каталог за игри. Провереният ISO остава
+**0.2.0**. Осемте gaming функции идват с отделното подписано desktop обновяване
+**0.3.0 preview**. След инсталацията затвори игрите и следвай
+[ръководството Gaming Journey](GAMING-JOURNEY.md).

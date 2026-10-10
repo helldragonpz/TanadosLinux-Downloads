@@ -1,8 +1,8 @@
 # Install Tanados Obsidian Tide 0.2.0
 
-Download **[Tanados Media Creator 0.2.1](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** for the Windows or Linux computer creating the USB.
+Download **[Tanados Media Creator 0.3.0](https://helldragonpz.github.io/TanadosLinux-Downloads/#download)** for the Windows or Linux computer creating the USB.
 **You do not need to download Linux first.** Media Creator downloads the official image, checks it, writes your USB and verifies the complete copy automatically.
-Downloads are public and require no GitHub account. The OS image remains 0.2.0; Media Creator is 0.2.1.
+Downloads are public and require no GitHub account. The OS image remains 0.2.0; Media Creator is 0.3.0.
 
 See the **[illustrated installation guide](https://helldragonpz.github.io/TanadosLinux-Downloads/install.html?lang=en)**.
 Use an x86-64 PC/laptop, a **16 GB+ USB**, an internet connection and **10 GB free** on the computer preparing it. Use NTFS/exFAT or a Linux filesystem for the cached 6.45 GB image; FAT32 cannot hold it.
@@ -10,12 +10,12 @@ Physical PC/laptop installation, Secure Boot and native Windows USB writing stil
 
 ## Open Media Creator
 
-On **Windows 10/11**, extract the whole `Tanados-Media-Creator-0.2.1-Windows-x64.zip` and open `TanadosMediaCreator.exe`. Keep the other files beside the EXE.
+On **Windows 10/11**, extract the whole `Tanados-Media-Creator-0.3.0-Windows-x64.zip` and open `TanadosMediaCreator.exe`. Keep the other files beside the EXE.
 
 On **Ubuntu/Debian**, install the DEB and open **Tanados Media Creator** from the application menu:
 
 ```bash
-sudo apt install ./Tanados-Media-Creator-0.2.1-Linux-amd64.deb
+sudo apt install ./Tanados-Media-Creator-0.3.0-Linux-amd64.deb
 ```
 
 A Linux portable archive is also available for systems with working Chromium sandbox support.
@@ -90,3 +90,16 @@ sent you this preview. In the live session, the installer log is
 `/root/.cache/calamares/session.log`; use administrator access to copy it before
 shutting down the live session. Release-specific checks are recorded in
 [the release evidence](releases/OBSIDIAN-TIDE-0.2.0.md).
+
+
+## Gaming Journey 0.3.0 preview
+
+Media Creator 0.3.0 includes the new game checker. The accepted ISO remains
+**0.2.0**. All eight gaming workflows are available in the separate signed
+**0.3.0 preview desktop update**. After installation, close games and follow
+[the Gaming Journey guide](GAMING-JOURNEY.md).
+
+Media Creator 0.3.0 включва новия каталог за игри. Провереният ISO остава
+**0.2.0**. Осемте gaming функции идват с отделното подписано desktop обновяване
+**0.3.0 preview**. След инсталацията затвори игрите и следвай
+[ръководството Gaming Journey](GAMING-JOURNEY.md).

@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-10",
+  "policy": {
+    "bg": "Linux версия и Proton маршрут не доказват успешна игра. За непроверено заглавие провери преди да замениш Windows. Игри извън каталога са непроверени.",
+    "en": "A Linux build or Proton route does not prove gameplay. Check untested games before replacing Windows. Games outside this catalog are unverified."
+  },
+  "games": [
+    {
+      "id": "counter-strike-2",
+      "title": "Counter-Strike 2",
+      "steamAppId": 730,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/730/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "dota-2",
+      "title": "Dota 2",
+      "steamAppId": 570,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/570/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "team-fortress-2",
+      "title": "Team Fortress 2",
+      "steamAppId": 440,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/440/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "stardew-valley",
+      "title": "Stardew Valley",
+      "steamAppId": 413150,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/413150/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "terraria",
+      "title": "Terraria",
+      "steamAppId": 105600,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/105600/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "hollow-knight",
+      "title": "Hollow Knight",
+      "steamAppId": 367520,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/367520/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "factorio",
+      "title": "Factorio",
+      "steamAppId": 427520,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/427520/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "rimworld",
+      "title": "RimWorld",
+      "steamAppId": 294100,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/294100/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "portal-2",
+      "title": "Portal 2",
+      "steamAppId": 620,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/620/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "left-4-dead-2",
+      "title": "Left 4 Dead 2",
+      "steamAppId": 550,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "native",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/550/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "celeste",
+      "title": "Celeste",
+      "steamAppId": 504230,
+      "launchPlatform": "native",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/504230/",
+      "reason": {
+        "bg": "Издателят предлага Linux версия. Играта не е тествана в Tanados.",
+        "en": "The publisher offers a Linux build. This game has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "baldurs-gate-3",
+      "title": "Baldur's Gate 3",
+      "steamAppId": 1086940,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/1086940/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "cyberpunk-2077",
+      "title": "Cyberpunk 2077",
+      "steamAppId": 1091500,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/1091500/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "elden-ring",
+      "title": "ELDEN RING",
+      "steamAppId": 1245620,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/1245620/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "witcher-3",
+      "title": "The Witcher 3: Wild Hunt",
+      "steamAppId": 292030,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/292030/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "hogwarts-legacy",
+      "title": "Hogwarts Legacy",
+      "steamAppId": 990080,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/990080/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "no-mans-sky",
+      "title": "No Man's Sky",
+      "steamAppId": 275850,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "unverified",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/275850/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "skyrim-special-edition",
+      "title": "Skyrim Special Edition",
+      "steamAppId": 489830,
+      "launchPlatform": "proton",
+      "playStatus": "unverified",
+      "multiplayerStatus": "not-applicable",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://store.steampowered.com/app/489830/",
+      "reason": {
+        "bg": "Windows версия; предложен Proton маршрут. Няма тест на текущата версия в Tanados.",
+        "en": "Windows build; proposed Proton route. Its current build has not been tested on Tanados."
+      }
+    },
+    {
+      "id": "fortnite",
+      "title": "Fortnite",
+      "launchPlatform": "unsupported",
+      "playStatus": "unsupported",
+      "multiplayerStatus": "unsupported",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://www.epicgames.com/help/c-34254770/c-38015632/can-i-run-fortnite-on-windows-parallels-or-other-non-native-operating-systems-on-pc-a25107496",
+      "reason": {
+        "bg": "Epic не поддържа локално стартиране на Linux. Cloud streaming е отделна услуга.",
+        "en": "Epic does not support local launch on Linux. Cloud streaming is a separate service."
+      }
+    },
+    {
+      "id": "valorant",
+      "title": "VALORANT",
+      "launchPlatform": "unsupported",
+      "playStatus": "unsupported",
+      "multiplayerStatus": "unsupported",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://support.riotgames.com/en-us/valorant/support-tools/minimum-recommended-pc-specs",
+      "reason": {
+        "bg": "Официалните изисквания са Windows 10/11. Няма поддържан локален Tanados маршрут.",
+        "en": "Official requirements are Windows 10/11. There is no supported local Tanados route."
+      }
+    },
+    {
+      "id": "gta-online",
+      "title": "Grand Theft Auto Online",
+      "launchPlatform": "unsupported",
+      "playStatus": "unsupported",
+      "multiplayerStatus": "unsupported",
+      "checkedAt": "2026-10-10",
+      "sourceUrl": "https://support.rockstargames.com/articles/1nenwhZlVrJY6CTFeSS2Fx/grand-theft-auto-online-battleye-faq",
+      "reason": {
+        "bg": "Rockstar изключва Steam Deck/BattlEye за GTA Online. Не предлагаме обход за Linux. Story Mode е отделен.",
+        "en": "Rockstar excludes Steam Deck/BattlEye for GTA Online. We offer no Linux bypass. Story Mode is separate."
+      }
+    }
+  ]
+}
